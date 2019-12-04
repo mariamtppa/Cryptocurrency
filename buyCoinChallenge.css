@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgba(250, 235, 215,0.2);
+}
+
+.theTable {
+	width: 700px;
+	height: 450px;
+	background-color: rgba(255,255,255);
+	border: 1px solid transparent;
+	border-collapse: collapse;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+td, tr{
+  padding: 15px;
+  text-align: left;
+}
+
+#diff, th {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(211,211,211);
+}
+
+.nextButtonPage1 {
+	display: block;
+	text-align: right;
+	font-size: 18px;
+	background-color: rgb(211,211,211);
+}
+
+.nextButtonPage1 i, .nextButton i {
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+.nextButton {
+	display: inline;
+	float: right;
+	font-size: 18px;
+}
+
+.prevButton {
+	display: inline;
+	float: left;
+	font-size: 18px;
+}
+
+.prevButton i{
+	margin-right: 5px;
+	font-size: 18px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.theTableOnSmallScreen {
+	background-color: rgba(255,255,255);
+	display: none;
+}
+
+.prevAndNextButtonWrapper {
+	padding: 10px 5px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	background-color: rgb(211,211,211);
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgb(211,211,211);
+	color: #ffffff;
+}
+
+@media screen and (max-width: 760px) {
+	body {
+	    display: initial;
+        text-align: center;
+    }
+
+	.theTable {
+		display: none;
+	}
+
+	.theTableOnSmallScreen {
+		border: 1px solid green;
+		display: block;
+	}
+
+	li:nth-child(odd) {
+        background-color: rgb(211,211,211);
+    }
+
+    .nextButtonPage1 {
+	    padding: 10px 5px;
+	    padding-right: 20px;
+}
