@@ -76,7 +76,6 @@ ul{
 }
 
 li {
-	border: 1px solid red;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -115,7 +114,6 @@ a:hover {
 	}
 
 	.theTableOnSmallScreen {
-		border: 1px solid green;
 		display: block;
 	}
 
